@@ -51,4 +51,6 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-node-
       - name: Test
-        run: npm test
+        run: |
+          npm install
+          npm test
